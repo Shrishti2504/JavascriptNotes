@@ -305,8 +305,8 @@ h[0].replaceChild(si, jt);
 h[0].removeChild(si);
 
 // selecting using query
-console.log(document.querySelector('.container'));
-console.log(document.querySelectorAll('.container'));
+console.log(document.querySelector('.container')[0]);
+console.log(document.querySelector('.container')[1]);
 
 
 
