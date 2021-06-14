@@ -189,7 +189,7 @@ c2 = avg(35, 23);
 // while (f < a.length);
 
 // Arrays Methods
-let a = ['fan', 'camera', 120, null, true];
+let qwer = ['fan', 'camera', 120, null, true];
 
 // length
 // console.log(a.length);
@@ -207,11 +207,106 @@ let a = ['fan', 'camera', 120, null, true];
 // console.log(a);
 
 // unshift
-const newline = a.unshift("shrishti");
-console.log(newline);
-// console.log(a);
-// git add
+// const newline = qwer.unshift("shrishti");
+// console.log(newline);
+// console.log(qwer);
 
+// String Method
+
+// let myfirstString = "Hello this is Shrishti";
+
+// String length
+// console.log(myfirstString.length);
+
+// String indexOf Method
+// console.log(myfirstString.indexOf("Shrishti"));
+// console.log(myfirstString.lastIndexOf("is"));
+
+// String Slice Method
+// console.log(myfirstString.slice(0, 6));
+
+// String Replace Method
+// console.log(myfirstString.replace("Shrishti", "Jaimit"));
+
+// Time and Date in JavaScript
+
+// new Date()
+// new Date() creates a new date object with the current date and time:
+// example:
+
+// let myDate = new Date;
+// console.log(myDate);
+// console.log(myDate.getFullYear());
+// console.log(myDate.getMonth());
+// console.log(myDate.getDay());
+// console.log(myDate.getTime()); 
+// console.log(myDate.getSeconds());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getHours());
+// console.log(myDate.getDate());
+
+// DOM manipulation
+
+// Each element of html can be specified by dom manipulation as you can see below  
+console.log(document.firstElementChild.lastElementChild);
+
+// id
+console.log(document.getElementById('btn'));
+
+// you can also apply method and style by dom manipulation
+let v = document.getElementById('btn').click();
+// console.log(v + ' clicked');
+document.getElementById('btn').style.background="yellow";
+
+// class
+// console.log(document.getElementsByClassName('container'));
+
+// in class element also you can apply style
+let g = document.getElementsByClassName('content');
+g[0].style.background="pink";
+
+// console.log(g[0].innerHTML);
+// console.log(g[0].innerText);
+
+let h = document.getElementsByClassName('container');
+h[0].style.border="2px solid red";
+h[0].style.background="cyan";
+h[1].style.border="2px solid red";
+h[1].style.background="cyan";
+
+
+// element tag
+// you can also select single element tag
+document.getElementsByTagName("h1")[0].style.color = "green";
+
+// document.getElementsByTagName("button");
+let tn = document.getElementsByTagName("div");
+console.log(tn);
+
+// You can also add elements using DOM manipulation
+let jt = document.createElement("p");
+jt.innerText = "This is a great paragraph.";
+
+
+
+h[0].appendChild(jt);
+jt.style.margin = "10px";
+jt.style.fontFamily = "Helvetica";
+
+let si = document.createElement("b");
+si.innerText = "This is a bold paragraph.";
+jt.style.margin = "10px";
+jt.style.fontFamily = "Helvetica";
+
+// you can also replace elements using replaceChild
+h[0].replaceChild(si, jt);
+
+// to remove child elements
+h[0].removeChild(si);
+
+// selecting using query
+console.log(document.querySelector('.container'));
+console.log(document.querySelectorAll('.container'));
 
 
 
