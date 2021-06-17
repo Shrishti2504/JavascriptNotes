@@ -255,8 +255,8 @@ console.log(document.getElementById('btn'));
 
 // you can also apply method and style by dom manipulation
 let v = document.getElementById('btn').click();
-// console.log(v + ' clicked');
-document.getElementById('btn').style.background="yellow";
+console.log(v + ' clicked');
+
 
 // class
 // console.log(document.getElementsByClassName('container'));
@@ -307,6 +307,45 @@ h[0].removeChild(si);
 // selecting using query
 console.log(document.querySelector('.container')[0]);
 console.log(document.querySelector('.container')[1]);
+
+// Events in JavaScript
+
+function clicked(){
+    document.querySelectorAll('.container')[0].style.background = "#2a9d8f";
+    document.querySelectorAll('.container')[1].style.background = "#2a9d8f";
+    
+    console.log('you clicked me');
+}
+
+// window.onload = function(){
+//     console.log('you loaded');
+// }
+
+// start.addEventListener('click', function(){
+//     console.log('again clicked me 😡');
+// })
+
+// start.addEventListener('mouseover', function(){
+//     console.log('you came!!');
+// })
+
+// start.addEventListener('mouseout', function(){
+//     console.log('you going!?');
+// })
+
+let ls = document.querySelectorAll('.container')[1].innerHTML;
+start.addEventListener('mouseup', function(){
+    document.querySelectorAll('.container')[1].innerHTML = ls;
+    console.log('you up!?');
+})
+
+start.addEventListener('mousedown', function(){
+    document.querySelectorAll('.container')[1].innerHTML = '<b> you changed us by clicking </b>'
+    document.querySelectorAll('.container')[1].style.color = "white";
+    console.log('you down!?');
+})
+
+
 
 
 
